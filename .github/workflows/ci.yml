@@ -58,6 +58,7 @@ jobs:
     uses: ./.github/workflows/clawhub-package-publish.yml
     with:
       dry_run: true
+      owner: opik
 
   clawhub-suspicious-check:
     name: ClawHub suspicious scan

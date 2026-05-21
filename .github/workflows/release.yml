@@ -205,6 +205,7 @@ jobs:
     uses: ./.github/workflows/clawhub-package-publish.yml
     with:
       dry_run: false
+      owner: opik
       ref: ${{ needs.validate.outputs.tag_name }}
       version: ${{ needs.validate.outputs.package_version }}
       source_ref: refs/tags/${{ needs.validate.outputs.tag_name }}
